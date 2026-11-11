@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms of Service — Explore Islam</title>
+<style>
+  :root {
+    --fg: #1a1a1a; --muted: #555; --accent: #d93025; --bg: #ffffff; --card: #f8f9fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fg: #e8eaed; --muted: #9aa0a6; --bg: #1a1a1a; --card: #2a2a2a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fg: #e8eaed; --muted: #9aa0a6; --bg: #1a1a1a; --card: #2a2a2a;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 780px; margin: 0 auto; padding: 32px 16px; background: var(--bg); color: var(--fg); line-height: 1.6;
+  }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 32px; border-bottom: 2px solid var(--accent); padding-bottom: 4px; }
+  h3 { font-size: 16px; margin-top: 20px; }
+  .header-meta { color: var(--muted); margin-bottom: 24px; font-size: 14px; }
+  .youtube-badge {
+    display: inline-block; background: #ff0000; color: white; padding: 4px 10px; border-radius: 4px;
+    font-weight: bold; font-size: 13px; letter-spacing: 0.5px; margin-right: 8px;
+  }
+  .card {
+    background: var(--card); border-radius: 8px; padding: 16px; margin: 16px 0;
+  }
+  a { color: #1a73e8; }
+  ul { margin: 8px 0; padding-left: 24px; }
+  li { margin: 6px 0; }
+  code {
+    background: var(--card); padding: 2px 6px; border-radius: 4px; font-size: 90%;
+  }
+  .nav {
+    background: var(--card); padding: 12px; border-radius: 8px; margin-bottom: 24px;
+  }
+  .nav a { margin-right: 16px; }
+  footer {
+    margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--muted);
+    color: var(--muted); font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="privacy-policy.html">Privacy Policy</a>
+  <a href="terms-of-service.html"><strong>Terms of Service</strong></a>
+  <a href="https://www.youtube.com/channel/UCBRMzOTwKLYo5nKjNnpCR9Q">YouTube Channel</a>
+</nav>
+
+<h1><span class="youtube-badge">YOUTUBE</span>Terms of Service</h1>
+<p class="header-meta">Explore Islam — Quran recitation channel &middot; Last updated: 11 November 2026</p>
+
+<div class="card">
+<strong>Summary:</strong> This page records the terms under which the Explore Islam channel publishes content and operates its upload automation. It exists to satisfy the YouTube API Services policy requirement for a Terms of Service document.
+</div>
+
+<h2>1. About Explore Islam</h2>
+<p>
+Explore Islam is a non-profit YouTube channel operated by a single individual. The channel publishes full-chapter Quran recitations (notably by Shaykh Mahmoud Khalil Al-Husary) with Urdu and English translation subtitles, for the benefit of the global Muslim community.
+</p>
+<ul>
+  <li>YouTube Channel: <a href="https://www.youtube.com/channel/UCBRMzOTwKLYo5nKjNnpCR9Q">Explore Islam</a></li>
+  <li>Contact: Bebasit [at] hotmail.com</li>
+</ul>
+
+<h2>2. Scope of these terms</h2>
+<p>
+These Terms of Service cover two things:
+</p>
+<ul>
+  <li><strong>The YouTube channel</strong> — the videos we publish, and your use of them as a viewer.</li>
+  <li><strong>The upload automation tool</strong> — the internal-only Python/ffmpeg script the channel owner runs on his own computer to publish videos via the YouTube Data API v3.</li>
+</ul>
+<p>
+Use of the YouTube platform itself is governed by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a>, which takes precedence over anything on this page.
+</p>
+
+<h2>3. Content on the channel</h2>
+
+<h3>3.1 Source material</h3>
+<p>
+Quran recitations are reproductions of the Quranic text, which is in the public domain. Where a specific recitation is attributed to a named Qari, that recording is used under the understanding that such recitations are intended for free dissemination for religious purposes. Any content owner who believes we have misused their material may contact us at the email above.
+</p>
+
+<h3>3.2 Takedown requests</h3>
+<p>
+If you are a copyright owner and believe a video on this channel infringes your rights, please use <a href="https://www.youtube.com/copyright_complaint_form">YouTube's copyright complaint process</a>, which we will honour. You may also contact us directly.
+</p>
+
+<h3>3.3 No warranty</h3>
+<p>
+The videos are provided as-is for educational and spiritual benefit. We do not warrant that the translations, recitations, or annotations are free from errors. Viewers should consult qualified Islamic scholars for religious guidance.
+</p>
+
+<h2>4. Use of the upload automation tool</h2>
+
+<h3>4.1 Internal-only use</h3>
+<p>
+The upload automation tool is used only by the channel owner, on his own computer, with his own Google account. It is not distributed, licensed, or made available to any other person. There are no end users other than the channel owner himself.
+</p>
+
+<h3>4.2 YouTube API usage</h3>
+<p>
+The tool uses the YouTube Data API v3 strictly to publish videos to the channel owner's own channel. Permitted API calls are:
+</p>
+<ul>
+  <li><code>videos.insert</code> — upload the video file</li>
+  <li><code>videos.update</code> — set the title, description, and category</li>
+  <li><code>thumbnails.set</code> — attach a custom thumbnail</li>
+  <li><code>playlistItems.insert</code> — add the video to a playlist owned by the same channel</li>
+  <li><code>videos.list</code>, <code>playlists.list</code>, <code>channels.list</code> — read back the channel's own metadata to confirm uploads</li>
+</ul>
+<p>
+The tool does not query, read, store, or process data about any other YouTube channel, any viewer, or any third party.
+</p>
+
+<h3>4.3 Compliance</h3>
+<p>
+The channel owner acknowledges and agrees to abide by:
+</p>
+<ul>
+  <li>The <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services Terms of Service</a></li>
+  <li>The <a href="https://developers.google.com/youtube/terms/developer-policies">YouTube API Services Developer Policies</a></li>
+  <li>The <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+  <li>All rate limits, quotas, and operational restrictions imposed by Google on the YouTube Data API</li>
+</ul>
+
+<h2>5. No fees, no payment, no commerce</h2>
+<p>
+Explore Islam is a non-profit channel. We do not charge viewers. We do not run subscriptions, memberships, or any paywall. Ad revenue from YouTube's own monetisation programme, if any, is treated as incidental and used to offset hosting and production costs.
+</p>
+
+<h2>6. Limitation of liability</h2>
+<p>
+The channel and its content are provided as-is, without any warranty of fitness for any particular purpose, express or implied. The channel owner is not liable for any loss, damage, or injury arising from the use of the channel, its videos, or any linked material.
+</p>
+
+<h2>7. Changes to these terms</h2>
+<p>
+These terms may be updated from time to time. Significant changes will be noted in a new section at the bottom. The "Last updated" date at the top of this page reflects the most recent revision.
+</p>
+
+<h2>8. Contact</h2>
+<p>
+Questions about these terms, the channel, or the upload tool can be sent to: <strong>Bebasit [at] hotmail.com</strong>
+</p>
+
+<footer>
+&copy; 2026 Explore Islam &middot; Non-profit dawah channel &middot; This page is a compliance document for the YouTube Data API &middot; <a href="privacy-policy.html">Privacy Policy</a>
+</footer>
+
+</body>
+</html>
