@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Explore Islam</title>
+<style>
+  :root {
+    --fg: #1a1a1a; --muted: #555; --accent: #d93025; --bg: #ffffff; --card: #f8f9fa;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fg: #e8eaed; --muted: #9aa0a6; --bg: #1a1a1a; --card: #2a2a2a;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fg: #e8eaed; --muted: #9aa0a6; --bg: #1a1a1a; --card: #2a2a2a;
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 780px; margin: 0 auto; padding: 32px 16px; background: var(--bg); color: var(--fg); line-height: 1.6;
+  }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  h2 { font-size: 20px; margin-top: 32px; border-bottom: 2px solid var(--accent); padding-bottom: 4px; }
+  h3 { font-size: 16px; margin-top: 20px; }
+  .header-meta { color: var(--muted); margin-bottom: 24px; font-size: 14px; }
+  .youtube-badge {
+    display: inline-block; background: #ff0000; color: white; padding: 4px 10px; border-radius: 4px;
+    font-weight: bold; font-size: 13px; letter-spacing: 0.5px; margin-right: 8px;
+  }
+  .card {
+    background: var(--card); border-radius: 8px; padding: 16px; margin: 16px 0;
+  }
+  a { color: #1a73e8; }
+  ul { margin: 8px 0; padding-left: 24px; }
+  li { margin: 6px 0; }
+  code {
+    background: var(--card); padding: 2px 6px; border-radius: 4px; font-size: 90%;
+  }
+  .nav {
+    background: var(--card); padding: 12px; border-radius: 8px; margin-bottom: 24px;
+  }
+  .nav a { margin-right: 16px; }
+  footer {
+    margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--muted);
+    color: var(--muted); font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <a href="index.html">Home</a>
+  <a href="privacy-policy.html"><strong>Privacy Policy</strong></a>
+  <a href="terms-of-service.html">Terms of Service</a>
+  <a href="https://www.youtube.com/channel/UCBRMzOTwKLYo5nKjNnpCR9Q">YouTube Channel</a>
+</nav>
+
+<h1><span class="youtube-badge">YOUTUBE</span>Privacy Policy</h1>
+<p class="header-meta">Explore Islam — Quran recitation channel &middot; Last updated: 11 November 2026</p>
+
+<div class="card">
+<strong>Summary:</strong> Explore Islam is a non-profit YouTube channel operated by a single individual. Our upload automation tool does not collect, store, share, or sell personal data from viewers or third parties. This policy exists to comply with YouTube API Services policy requirements.
+</div>
+
+<h2>1. Who we are</h2>
+<p>
+Explore Islam (formerly "Islam Samjho") is a non-profit YouTube channel publishing full Quran recitations and Islamic educational content for the global Muslim community, with a focus on Urdu-speaking viewers. The channel is operated by a single individual and is not a company or legal entity.
+</p>
+<ul>
+  <li>YouTube Channel: <a href="https://www.youtube.com/channel/UCBRMzOTwKLYo5nKjNnpCR9Q">Explore Islam</a></li>
+  <li>Contact: Bebasit [at] hotmail.com</li>
+</ul>
+
+<h2>2. Our API client</h2>
+<p>
+We operate an internal-only upload automation tool ("API client") that uses the YouTube Data API v3 to publish Quran recitation videos to our own channel. Important facts about this tool:
+</p>
+<ul>
+  <li>The tool is <strong>not distributed</strong> to end users, developers, or any third party.</li>
+  <li>The tool is <strong>not publicly accessible</strong> — only the channel owner can run it.</li>
+  <li>The tool authenticates with <strong>only the channel owner's own Google account credentials</strong>.</li>
+  <li>The tool has <strong>no sign-up, no user accounts, no viewer-facing interface</strong>.</li>
+</ul>
+
+<h2>3. What data we collect</h2>
+
+<h3>From YouTube viewers</h3>
+<p>
+<strong>We do not collect any data from viewers.</strong> Our upload tool does not read comments, likes, subscriber lists, analytics, watch history, or any other viewer-facing data through the API.
+</p>
+
+<h3>From the channel owner</h3>
+<p>The upload tool uses the following data, stored only on the channel owner's personal computer:</p>
+<ul>
+  <li>Google OAuth 2.0 refresh token (for the channel owner's Google account)</li>
+  <li>Local file paths for audio, subtitle, and video files to be uploaded</li>
+  <li>Metadata (titles, descriptions, tags) written by the channel owner</li>
+</ul>
+<p>None of this data is transmitted anywhere except to Google's own YouTube Data API endpoints.</p>
+
+<h2>4. YouTube API Services</h2>
+<p>
+Our API client uses the following YouTube Data API v3 endpoints, solely for publishing videos to our own channel:
+</p>
+<ul>
+  <li><code>videos.insert</code> — upload the MP4 file</li>
+  <li><code>videos.update</code> — set the title, description, and category</li>
+  <li><code>thumbnails.set</code> — attach a custom thumbnail</li>
+  <li><code>playlistItems.insert</code> — add the video to a Juz playlist</li>
+  <li><code>videos.list</code>, <code>playlists.list</code>, <code>channels.list</code> — read our own channel's own data to verify uploads</li>
+</ul>
+<p>
+By using this channel, viewers also agree to be bound by the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.
+</p>
+
+<h2>5. How we share data</h2>
+<p>
+<strong>We do not share any data with third parties.</strong> The only data transmission that occurs is between the channel owner's upload tool and Google's YouTube API, for the sole purpose of publishing videos to the channel owner's own channel.
+</p>
+
+<h2>6. Data retention and deletion</h2>
+<p>
+Because we do not collect data from viewers or third parties, there is no viewer data to retain or delete.
+</p>
+<p>
+Data stored locally on the channel owner's computer (OAuth refresh token, source files) is retained only as long as needed to operate the upload tool, and is deleted when the tool is uninstalled or the computer is decommissioned.
+</p>
+<p>
+To request deletion of any data that may have been inadvertently collected, or to raise any privacy concern, contact us at Bebasit [at] hotmail.com. We respond within 30 days.
+</p>
+
+<h2>7. Revoking access to your Google account</h2>
+<p>
+The channel owner can revoke the upload tool's access to the Google account at any time by visiting <a href="https://myaccount.google.com/permissions">Google Account → Security → Third-party apps with account access</a>.
+</p>
+
+<h2>8. Cookies and tracking</h2>
+<p>
+This website does not use cookies, tracking pixels, analytics, or any third-party scripts. It is a static HTML page served from GitHub Pages.
+</p>
+
+<h2>9. Children's privacy</h2>
+<p>
+We do not knowingly direct the channel's content or this upload tool at children under 13. Islamic content is intended for a general, all-ages audience.
+</p>
+
+<h2>10. Changes to this policy</h2>
+<p>
+We may update this policy from time to time. The "Last updated" date at the top of this page reflects the most recent revision. Significant changes will be noted in a new section below.
+</p>
+
+<h2>11. Governing law</h2>
+<p>
+This policy is provided in good faith by an individual channel owner and is not a contract. Use of the YouTube channel is governed by YouTube's own Terms of Service.
+</p>
+
+<footer>
+&copy; 2026 Explore Islam &middot; Non-profit dawah channel &middot; This page is a compliance document for the YouTube Data API &middot; <a href="terms-of-service.html">Terms of Service</a>
+</footer>
+
+</body>
+</html>
